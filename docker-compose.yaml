@@ -1,0 +1,13 @@
+
+services:
+  python-api:
+    image: tiangolo/uvicorn-gunicorn-fastapi:python3.11
+    container_name: python-api
+    ports:
+      - "8096:80"
+    volumes:
+      - ./app:/app
+      - ./output:/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - INSTALL_DEV=true

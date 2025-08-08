@@ -1,0 +1,13 @@
+# Miljöfiler / hemligheter
+.env
+*.key
+*.pem
+
+# Cache/loggar/tmp
+/storage/
+cache/
+tmp/
+*.log
+
+# Uppladdningar (om ej ska versioneras)
+output/
